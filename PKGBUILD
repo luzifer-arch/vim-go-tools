@@ -8,8 +8,9 @@ arch=('x86_64')
 url="https://github.com/fatih/vim-go"
 license=(other)
 makedepends=('go')
-source=("build.sh")
-sha512sums=('5055aec7ebd34916110b85bde9f7db1bce22a278e0c02e518581d399919aac2052e9e9d9469ce869e9152e418234f494729170e0fa261c308c4f29d8abd01ac1')
+source=("build.sh" "tools.txt")
+sha512sums=('225301ca5a3435d70a12628f55a6174487a59970596a23010c52b4e6554573a0bb9e16d01e4e08211cd1301272142acf195e1a7b97b0ee007ae8cbe757387d70'
+            '751a9bf8bbea2fac37f4a9e405e2a5020ad0880b353ea9467d54f0a1a31dd321e8f860fc32646c463e2142f46c4b82826e426a872a71752cb63b32ad34393e1e')
 
 build() {
 	mkdir -p "${srcdir}/go"
