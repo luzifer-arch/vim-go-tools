@@ -1,7 +1,7 @@
 # Maintainer: Knut Ahlers <knut at ahlers dot me>
 
 pkgname=vim-go-tools
-pkgver=0.1.0
+pkgver=2019.06.12
 pkgrel=1
 pkgdesc="Package of tools required by vim-go"
 arch=('x86_64')

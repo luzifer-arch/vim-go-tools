@@ -1,6 +1,6 @@
 pkgbase = vim-go-tools
 	pkgdesc = Package of tools required by vim-go
-	pkgver = 0.1.0
+	pkgver = 2019.06.12
 	pkgrel = 1
 	url = https://github.com/fatih/vim-go
 	arch = x86_64
