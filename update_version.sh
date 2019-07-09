@@ -19,4 +19,4 @@ sed -i "s/pkgver=.*/pkgver=$(date +%Y.%m.%d)/" PKGBUILD
 makepkg --printsrcinfo >.SRCINFO
 
 git add tools.txt .SRCINFO PKGBUILD
-git c -m "Update tools $(date +%Y.%m.%d)"
+git commit -m "Update tools $(date +%Y.%m.%d)"
