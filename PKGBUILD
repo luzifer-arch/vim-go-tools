@@ -1,7 +1,7 @@
 # Maintainer: Knut Ahlers <knut at ahlers dot me>
 
 pkgname=vim-go-tools
-pkgver=2019.07.11
+pkgver=2019.07.12
 pkgrel=1
 pkgdesc="Package of tools required by vim-go"
 arch=('x86_64')
@@ -10,7 +10,7 @@ license=(other)
 makedepends=('go')
 source=("build.sh" "tools.txt")
 sha512sums=('ee180fa557e4fe57003a67d4fe19747c6452d5fb39de78265827bfd4baa3aff26ebd8984ebc3cf0d7b22342d66dbd7bccf9d8adecc3498fe0d496376ef5d3e86'
-            'db09917d0b8b7947c7e72afd33d8072347a8f445e86c5e18924de04b44ffa98ae3f994cc56378d41f8e03e3ef314032ccd4ab3468df874a694c616cf36f4ddf6')
+            '22f980e0cbceef4a8782b0c544d7d0601e90c35aef45b6098888fe1c479f8b1089011a00ce3557fe3617076cb991875274a36a06417b673b9c593fb7f73ecb7d')
 
 build() {
 	mkdir -p "${srcdir}/go"

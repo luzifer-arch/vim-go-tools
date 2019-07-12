@@ -1,5 +1,4 @@
 github.com/alecthomas/gometalinter
-github.com/bhcleek/lsp-position/cmd/lsp-position
 github.com/davidrjenni/reftools/cmd/fillstruct
 github.com/fatih/gomodifytags
 github.com/fatih/motion
