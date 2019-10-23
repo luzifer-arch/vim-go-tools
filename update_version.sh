@@ -15,7 +15,6 @@ diff tools.txt tools.txt.new && {
 mv tools.txt.new tools.txt
 updpkgsums
 
-sed -i "s/pkgver=.*/pkgver=$(date +%Y.%m.%d)/" PKGBUILD
 makepkg --printsrcinfo >.SRCINFO
 
 git add tools.txt .SRCINFO PKGBUILD

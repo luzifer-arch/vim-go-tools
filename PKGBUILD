@@ -22,3 +22,7 @@ package() {
 		install -Dm755 "${srcdir}/go/bin/$(basename ${binary})" "${pkgdir}/usr/bin/$(basename ${binary})"
 	done
 }
+
+pkgver() {
+	date +"%Y.%m.%d"
+}
