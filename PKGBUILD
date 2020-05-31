@@ -1,7 +1,7 @@
 # Maintainer: Knut Ahlers <knut at ahlers dot me>
 
 pkgname=vim-go-tools
-pkgver=2019.07.12
+pkgver=2020.05.31
 pkgrel=1
 pkgdesc="Package of tools required by vim-go"
 arch=('x86_64')
@@ -9,7 +9,7 @@ url="https://github.com/fatih/vim-go"
 license=(other)
 makedepends=('go')
 source=("build.sh" "tools.txt")
-sha512sums=('ee180fa557e4fe57003a67d4fe19747c6452d5fb39de78265827bfd4baa3aff26ebd8984ebc3cf0d7b22342d66dbd7bccf9d8adecc3498fe0d496376ef5d3e86'
+sha512sums=('c85e9c08cafb7a800a1eb4a8dc144503d73e00102d40219eaaf9d93f4b18fa5d2e1597722e37e00936d2315dd7f024fa6ac59b9a0f0a173e6e5570f3ef185dd9'
             '6ea26e2772780889220417c2d70206fda05141c86e628803b8f6c8b3614cce14a337ba7e81a62b343ce0023bc2e26fded77c6dc0c444eb1da2413e30e2b962f0')
 
 build() {
