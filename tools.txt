@@ -16,4 +16,4 @@ golang.org/x/tools/cmd/gorename@master
 golang.org/x/tools/cmd/guru@master
 golang.org/x/tools/gopls@latest
 honnef.co/go/tools/cmd/keyify@master
-honnef.co/go/tools/cmd/staticcheck@master
+honnef.co/go/tools/cmd/staticcheck@latest
