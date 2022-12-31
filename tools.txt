@@ -3,7 +3,7 @@ github.com/fatih/gomodifytags@latest
 github.com/fatih/motion@latest
 github.com/go-delve/delve/cmd/dlv@latest
 github.com/golangci/golangci-lint/cmd/golangci-lint@latest
-github.com/josharian/impl@master
+github.com/josharian/impl@main
 github.com/jstemmer/gotags@master
 github.com/kisielk/errcheck@latest
 github.com/klauspost/asmfmt/cmd/asmfmt@latest
