@@ -10,7 +10,7 @@ license=(other)
 makedepends=('go')
 source=("build.sh" "tools.txt")
 sha512sums=('5bf0f12f0836084a9a76a970cc605375b9cabead2450fd5ab2753c3604b3061568c2851e090516846c6920bd2dfd3843ff69453b6cc0a0faf72e3af348c40475'
-            'e7329d539670e9a67f9b9f0c12764abbbc159a0759e2afc25310429bf76fb46bce646bcd01842630afa24d74449da5ff4703e4abcc49d17cddfe1a58c5ed2d03')
+            'eebc9ebbcaff2acaab1b70ce0105fe7f6ead2dab7f8b0ee78ff51b655df1688aff03cda15f1db327a71d030859ce079ec36b00703a8a9f293ede40669cf12c8c')
 
 build() {
 	mkdir -p "${srcdir}/go"
