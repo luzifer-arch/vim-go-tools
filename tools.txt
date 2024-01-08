@@ -9,7 +9,7 @@ github.com/jstemmer/gotags@master
 github.com/kisielk/errcheck@latest
 github.com/klauspost/asmfmt/cmd/asmfmt@latest
 github.com/koron/iferr@master
-github.com/mgechev/revive@v1.3.4
+github.com/mgechev/revive@latest
 github.com/rogpeppe/godef@latest
 golang.org/x/tools/cmd/goimports@master
 golang.org/x/tools/cmd/gorename@master
