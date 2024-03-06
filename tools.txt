@@ -1,4 +1,4 @@
-# go v1.22.0-1
+# go v1.22.1-1
 github.com/davidrjenni/reftools/cmd/fillstruct@master
 github.com/fatih/gomodifytags@latest
 github.com/fatih/motion@latest
