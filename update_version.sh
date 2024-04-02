@@ -33,7 +33,7 @@ for ver in "${versions[@]}"; do
   echo "${ver}" >>tools.txt.new
 done
 
-diff tools.txt tools.txt.new && {
+diff -u tools.txt tools.txt.new && {
   echo "Up to date"
   rm tools.txt.new
   exit 0
