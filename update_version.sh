@@ -1,13 +1,37 @@
 #!/bin/bash
 set -euo pipefail
 
-curl -sSf https://archlinux.org/packages/extra/x86_64/go/json/ |
-  jq -r '"# " + .pkgname + " v" + .pkgver + "-" + .pkgrel' >tools.txt.new
+pkgs=($(
+  curl -sSfL "https://raw.githubusercontent.com/fatih/vim-go/master/plugin/go.vim" |
+    grep -Eo "\\ \['[^']*/[^']*'" |
+    tr -d "[' " |
+    sort
+))
 
-curl -sSfL "https://raw.githubusercontent.com/fatih/vim-go/master/plugin/go.vim" |
-  grep -Eo "\\ \['[^']*/[^']*'" |
-  tr -d "[' " |
-  sort >>tools.txt.new
+versions=()
+
+echo "### Packages from vim-go" >tools.txt.new
+
+for pkg in "${pkgs[@]}"; do
+  qpkg=${pkg%@*}
+  ver=""
+  while [[ -z $ver ]]; do
+    ver=$(curl -sSf "https://proxy.golang.org/${qpkg}/@latest" | jq -r .Version || echo -n "")
+    [[ -n $ver ]] || qpkg=${qpkg%/*}
+  done
+
+  versions+=("# GoProxy: ${qpkg} ${ver}")
+  echo "${pkg}" >>tools.txt.new
+done
+
+echo -e "\n### Version checking for package rebuilds" >>tools.txt.new
+
+curl -sSf https://archlinux.org/packages/extra/x86_64/go/json/ |
+  jq -r '"# Archlinux: " + .pkgname + " v" + .pkgver + "-" + .pkgrel' >>tools.txt.new
+
+for ver in "${versions[@]}"; do
+  echo "${ver}" >>tools.txt.new
+done
 
 diff tools.txt tools.txt.new && {
   echo "Up to date"
