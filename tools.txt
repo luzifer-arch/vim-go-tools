@@ -14,7 +14,6 @@ github.com/rogpeppe/godef@latest
 golang.org/x/tools/cmd/goimports@master
 golang.org/x/tools/cmd/gorename@master
 golang.org/x/tools/gopls@latest
-honnef.co/go/tools/cmd/keyify@master
 honnef.co/go/tools/cmd/staticcheck@latest
 
 ### Version checking for package rebuilds
@@ -31,8 +30,7 @@ honnef.co/go/tools/cmd/staticcheck@latest
 # GoProxy: github.com/koron/iferr v0.0.0-20240122035601-9c3e2fbe4bd1
 # GoProxy: github.com/mgechev/revive v1.3.7
 # GoProxy: github.com/rogpeppe/godef v1.1.2
-# GoProxy: golang.org/x/tools v0.21.0
-# GoProxy: golang.org/x/tools v0.21.0
+# GoProxy: golang.org/x/tools v0.22.0
+# GoProxy: golang.org/x/tools v0.22.0
 # GoProxy: golang.org/x/tools/gopls v0.15.3
-# GoProxy: honnef.co/go/tools v0.4.7
 # GoProxy: honnef.co/go/tools v0.4.7
