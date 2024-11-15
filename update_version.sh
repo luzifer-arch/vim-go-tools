@@ -1,6 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
+function log() {
+  echo "$@" >&2
+}
+
 pkgs=($(
   curl -sSfL "https://raw.githubusercontent.com/fatih/vim-go/master/plugin/go.vim" |
     grep -Eo "\\ \['[^']*/[^']*'" |
@@ -16,9 +20,11 @@ for pkg in "${pkgs[@]}"; do
   qpkg=${pkg%@*}
   ver=""
   while [[ -z $ver ]]; do
+    log "-> Fetching version for '${qpkg}'..."
     ver=$(curl -sSf "https://proxy.golang.org/${qpkg}/@latest" | jq -r .Version || echo -n "")
     [[ -n $ver ]] || qpkg=${qpkg%/*}
   done
+  log "---> Version for '${qpkg}' found as '${ver}'"
 
   versions+=("# GoProxy: ${qpkg} ${ver}")
   echo "${pkg}" >>tools.txt.new
