@@ -21,7 +21,7 @@ honnef.co/go/tools/cmd/staticcheck@latest
 # GoProxy: github.com/fatih/gomodifytags v1.17.0
 # GoProxy: github.com/fatih/motion v1.2.0
 # GoProxy: github.com/go-delve/delve v1.24.0
-# GoProxy: github.com/golangci/golangci-lint v1.63.4
+# GoProxy: github.com/golangci/golangci-lint v1.64.0
 # GoProxy: github.com/josharian/impl v1.4.0
 # GoProxy: github.com/jstemmer/gotags v1.4.1
 # GoProxy: github.com/kisielk/errcheck v1.8.0
