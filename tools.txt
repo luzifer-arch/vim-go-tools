@@ -30,5 +30,5 @@ honnef.co/go/tools/cmd/staticcheck@latest
 # GoProxy: github.com/mgechev/revive v1.7.0
 # GoProxy: github.com/rogpeppe/godef v1.1.2
 # GoProxy: golang.org/x/tools v0.30.0
-# GoProxy: golang.org/x/tools/gopls v0.17.1
+# GoProxy: golang.org/x/tools/gopls v0.18.0
 # GoProxy: honnef.co/go/tools v0.6.0
