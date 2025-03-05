@@ -16,7 +16,7 @@ golang.org/x/tools/gopls@latest
 honnef.co/go/tools/cmd/staticcheck@latest
 
 ### Version checking for package rebuilds
-# Archlinux: go v1.24.0-1
+# Archlinux: go v1.24.1-1
 # GoProxy: github.com/davidrjenni/reftools v0.0.0-20240211192525-f5f96ef18854
 # GoProxy: github.com/fatih/gomodifytags v1.17.0
 # GoProxy: github.com/fatih/motion v1.2.0
