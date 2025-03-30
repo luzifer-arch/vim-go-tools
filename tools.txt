@@ -27,7 +27,7 @@ honnef.co/go/tools/cmd/staticcheck@latest
 # GoProxy: github.com/kisielk/errcheck v1.9.0
 # GoProxy: github.com/klauspost/asmfmt v1.3.2
 # GoProxy: github.com/koron/iferr v0.0.0-20240122035601-9c3e2fbe4bd1
-# GoProxy: github.com/mgechev/revive v1.7.0
+# GoProxy: github.com/mgechev/revive v1.8.0
 # GoProxy: github.com/rogpeppe/godef v1.1.2
 # GoProxy: golang.org/x/tools v0.31.0
 # GoProxy: golang.org/x/tools/gopls v0.18.1
