@@ -20,7 +20,7 @@ honnef.co/go/tools/cmd/staticcheck@latest
 # GoProxy: github.com/davidrjenni/reftools v0.0.0-20240211192525-f5f96ef18854
 # GoProxy: github.com/fatih/gomodifytags v1.17.0
 # GoProxy: github.com/fatih/motion v1.2.0
-# GoProxy: github.com/go-delve/delve v1.24.1
+# GoProxy: github.com/go-delve/delve v1.24.2
 # GoProxy: github.com/golangci/golangci-lint v1.64.8
 # GoProxy: github.com/josharian/impl v1.4.0
 # GoProxy: github.com/jstemmer/gotags v1.4.1
