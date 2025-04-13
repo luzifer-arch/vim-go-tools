@@ -6,15 +6,13 @@ function log() {
 }
 
 pkgs=($(
-  curl -sSfL "https://raw.githubusercontent.com/fatih/vim-go/master/plugin/go.vim" |
-    grep -Eo "\\ \['[^']*/[^']*'" |
-    tr -d "[' " |
+  grep -Ev '^(#|$)' tools.txt |
     sort
 ))
 
 versions=()
 
-echo "### Packages from vim-go" >tools.txt.new
+echo "### Packages to install" >tools.txt.new
 
 for pkg in "${pkgs[@]}"; do
   qpkg=${pkg%@*}
