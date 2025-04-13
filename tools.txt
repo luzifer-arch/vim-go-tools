@@ -1,4 +1,4 @@
-### Packages from vim-go
+### Packages to install
 github.com/davidrjenni/reftools/cmd/fillstruct@master
 github.com/fatih/gomodifytags@latest
 github.com/fatih/motion@latest
